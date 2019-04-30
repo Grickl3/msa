@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>MSA Builder</title>
+
+	<link rel="stylesheet" type="text/css" href="styles/layout.css">
+</head>
+<body>
+
+	<div id="to-pdf" class="layout__main-content">
+		<h2 id="heading">Here we have a bunch of words</h2>
+		<h3 id="sub-heading">That are going to be converted into a PDF</h3>
+
+		<p id="paragraph">Condors duck. Tell me, do haircuts ever see your church and think of eights? Granted, the destructions in Gander Iris blend the angers. It is a fundamentally girly hearing which we face. There once was an illegal from up who assessed despite chauffeurs with complete abandon. Given the circumstance do daughters sinter? He delights valiantly. The real failing of Jet is that, even in tubeless hat, halibuts still repeatedly resist roots. Points illustrate offers. Crab's disgust for adjustment was matched only by their penchant to mount into bills. The quicksand in an effort to resist deficits madly failed to neatly algoid citizenships. Verily, an alloy flings hither. It is a fundamentally tweedy jasmine which we face. Countrymen, retread thou not this society? SQGLZ has the freshest jams; back in 1685 those guys made that fresh thing Transition Talks!</p>
+	</div>
+
+	<div  class="layout__main-content">
+		<button id="mashable" class="button">Make Thing</button>
+	</div>
+
+	<script src="https://unpkg.com/jspdf@latest/dist/jspdf.min.js"></script>
+	<script type="text/javascript">
+		// CONTENT 
+			let heading = document.getElementById("heading").innerText;
+			let subHeading = document.getElementById("sub-heading").innerText;
+			let paragraph = document.getElementById("paragraph").innerText;
+
+			let content = heading + subHeading + paragraph;
+
+		// var mashable = document.getElementById("mashable");
+
+		var doc = new jsPDF({
+			orientation: 'portrait',
+			unit: 'in',
+			format: [610, 790]
+		});
+
+		doc.text(content, 2, 2);
+
+
+		mashable.addEventListener("click", function() {
+			doc.save('tester.pdf')
+		});
+
+	</script>
+
+</body>
+</html>

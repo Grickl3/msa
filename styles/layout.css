@@ -1,0 +1,14 @@
+
+
+.layout__main-content {
+	margin: 12rem;
+	max-width: 50rem;
+}
+
+.button {
+	border-radius: 5px;
+}
+
+.button:hover {
+	background-color: grey;
+}

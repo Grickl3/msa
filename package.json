@@ -1,0 +1,33 @@
+{
+  "name": "msa",
+  "version": "1.0.0",
+  "description": "Master Service Agreement Builder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Grickl3/msa.git"
+  },
+  "keywords": [
+    "MSA",
+    "Master",
+    "Service",
+    "Agreement",
+    "Business",
+    "Tools",
+    "Marketing",
+    "Creative",
+    "Services"
+  ],
+  "author": "SQGLZ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Grickl3/msa/issues"
+  },
+  "homepage": "https://github.com/Grickl3/msa#readme",
+  "dependencies": {
+    "jspdf": "^1.5.3"
+  }
+}
